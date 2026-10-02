@@ -1,69 +1,302 @@
-import Image from "next/image";
-
 export default function Home() {
+  const whatsapp =
+    "https://wa.me/529994428950?text=Hola%2C%20estoy%20interesado%20en%20el%20curso%20Ingenieros%20Vendiendo";
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      {/* HERO */}
+      <section className="hero">
+        <div className="nav">
+          <div className="brand">
+            <img
+              src="/logo-selling.png"
+              alt="Selling Methodologies | Instituto de Ventas"
+              className="brandLogo"
+            />
+          </div>
+
+          <a href={whatsapp} target="_blank" className="navButton">
+            Solicitar información
+          </a>
+        </div>
+
+        <div className="heroContent">
+          <div className="heroText">
+            <span className="eyebrow">FORMACIÓN ONLINE EN VIVO</span>
+
+            <h1>
+              INGENIEROS
+              <br />
+              <span>VENDIENDO</span>
+            </h1>
+
+            <p className="heroSubtitle">
+              Convierte tu conocimiento técnico en una ventaja comercial.
+            </p>
+
+            <p className="heroDescription">
+              Una formación diseñada para ingenieros y profesionales técnicos
+              que buscan fortalecer sus habilidades comerciales y generar
+              nuevas oportunidades.
+            </p>
+
+            <div className="heroInfo">
+              <div>
+                <strong>5</strong>
+                <span>SESIONES</span>
+              </div>
+
+              <div className="line" />
+
+              <div>
+                <strong>100%</strong>
+                <span>ONLINE EN VIVO</span>
+              </div>
+            </div>
+
+            <a href={whatsapp} target="_blank" className="primaryButton">
+              QUIERO PARTICIPAR
+              <span>→</span>
+            </a>
+          </div>
+
+          <div className="heroVisual">
+            <div className="engineeringCircle">
+              <span>INGENIERÍA</span>
+              <strong>+</strong>
+              <span>VENTAS</span>
+            </div>
+
+            <div className="floatingCard cardOne">
+              CONOCIMIENTO
+              <strong>TÉCNICO</strong>
+            </div>
+
+            <div className="floatingCard cardTwo">
+              VISIÓN
+              <strong>COMERCIAL</strong>
+            </div>
+          </div>
+        </div>
+
+        <div className="heroBottom">
+          <span>24 NOV</span>
+          <span>26 NOV</span>
+          <span>01 DIC</span>
+          <span>03 DIC</span>
+          <span>08 DIC</span>
+        </div>
+      </section>
+
+      {/* INTRODUCCIÓN */}
+      <section className="intro section">
+        <div className="sectionLabel">INGENIEROS VENDIENDO</div>
+
+        <h2>
+          TU CONOCIMIENTO TÉCNICO
+          <br />
+          <span>ES SOLO EL COMIENZO.</span>
+        </h2>
+
+        <p className="bigParagraph">
+          Saber desarrollar una solución es importante. Saber comunicar su
+          valor, detectar oportunidades y conectar con el cliente puede marcar
+          la diferencia.
+        </p>
+
+        <div className="introGrid">
+          <div className="introNumber">01</div>
+
+          <div>
+            <h3>DE INGENIERO A INGENIERO QUE VENDE</h3>
+            <p>
+              Ingenieros Vendiendo es una formación enfocada en profesionales
+              técnicos que quieren fortalecer sus habilidades comerciales sin
+              dejar de lado aquello que mejor conocen: su experiencia y
+              conocimiento.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PARA QUIÉN */}
+      <section className="audience section">
+        <div className="sectionLabel light">¿ES PARA TI?</div>
+
+        <div className="audienceHeader">
+          <h2>
+            CONOCIMIENTO TÉCNICO.
+            <br />
+            <span>MENTALIDAD COMERCIAL.</span>
+          </h2>
+
+          <p>
+            Para ingenieros y profesionales técnicos que necesitan comunicar,
+            conectar y vender mejor sus soluciones.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="concepts">
+          <div>
+            <span>01</span>
+            <h3>INGENIERÍA</h3>
+            <p>Utiliza tu conocimiento como una ventaja.</p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <h3>COMUNICACIÓN</h3>
+            <p>Explica el valor de tus soluciones con claridad.</p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <h3>VENTAS</h3>
+            <p>Desarrolla una visión orientada al cliente.</p>
+          </div>
+
+          <div>
+            <span>04</span>
+            <h3>OPORTUNIDADES</h3>
+            <p>Transforma conversaciones en posibilidades de negocio.</p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* FECHAS */}
+      <section className="dates section">
+        <div className="sectionLabel">PRÓXIMA EDICIÓN</div>
+
+        <div className="datesHeader">
+          <h2>
+            CINCO SESIONES.
+            <br />
+            <span>UNA NUEVA VISIÓN.</span>
+          </h2>
+
+          <p>Online en vivo</p>
+        </div>
+
+        <div className="dateGrid">
+          <div className="dateCard">
+            <span>NOV</span>
+            <strong>24</strong>
+          </div>
+
+          <div className="dateCard">
+            <span>NOV</span>
+            <strong>26</strong>
+          </div>
+
+          <div className="dateCard orange">
+            <span>DIC</span>
+            <strong>01</strong>
+          </div>
+
+          <div className="dateCard orange">
+            <span>DIC</span>
+            <strong>03</strong>
+          </div>
+
+          <div className="dateCard orange">
+            <span>DIC</span>
+            <strong>08</strong>
+          </div>
+        </div>
+
+        <div className="schedule">
+          <div>
+            <span>MÉXICO · CDMX</span>
+            <strong>5:30 PM — 7:00 PM</strong>
+          </div>
+
+          <div>
+            <span>COLOMBIA</span>
+            <strong>6:30 PM — 8:00 PM</strong>
+          </div>
+        </div>
+      </section>
+
+      {/* INSTRUCTORES */}
+      <section className="instructors section">
+        <div className="sectionLabel light">TUS INSTRUCTORES</div>
+
+        <h2>
+          EXPERIENCIA QUE
+          <br />
+          <span>SE COMPARTE.</span>
+        </h2>
+
+        <div className="instructorGrid">
+          <div className="instructorCard">
+            <div className="instructorPhoto">
+              <img src="/david-febres.png" alt="David Febres" />
+            </div>
+
+            <div className="instructorInfo">
+              <span>INSTRUCTOR</span>
+              <h3>DAVID FEBRES</h3>
+              <p>Ingenieros Vendiendo</p>
+            </div>
+          </div>
+
+          <div className="instructorCard">
+            <div className="instructorPhoto">
+              <img src="/miguel-gamez.png" alt="Miguel Gámez" />
+            </div>
+
+            <div className="instructorInfo">
+              <span>INSTRUCTOR</span>
+              <h3>MIGUEL GÁMEZ</h3>
+              <p>CEO de Selling Methodologies®</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FRASE */}
+      <section className="statement">
+        <p>TU CONOCIMIENTO TÉCNICO</p>
+        <h2>YA ES UNA VENTAJA.</h2>
+        <h3>AHORA APRENDE A CONVERTIRLO EN OPORTUNIDADES.</h3>
+      </section>
+
+      {/* CTA FINAL */}
+      <section className="finalCta">
+        <div className="sectionLabel">INGENIEROS VENDIENDO</div>
+
+        <h2>
+          ¿LISTO PARA DAR EL
+          <br />
+          <span>SIGUIENTE PASO?</span>
+        </h2>
+
+        <p>
+          24 y 26 de noviembre · 1, 3 y 8 de diciembre
+          <br />
+          100% online en vivo
+        </p>
+
+        <a href={whatsapp} target="_blank" className="primaryButton">
+          SOLICITAR INFORMACIÓN
+          <span>→</span>
+        </a>
+      </section>
+
+      <footer>
+        <strong>SELLING METHODOLOGIES®</strong>
+        <span>Selling Methodologies | Instituto de Ventas</span>
+      </footer>
+
+      {/* WHATSAPP FLOTANTE */}
+      <a
+        href={whatsapp}
+        target="_blank"
+        className="whatsapp"
+        aria-label="WhatsApp"
+      >
+        WA
+      </a>
+    </main>
   );
 }
